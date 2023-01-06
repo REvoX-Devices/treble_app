@@ -25,6 +25,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'me.phh.treble.app'
 }
 
 dependencies {

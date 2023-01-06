@@ -1,49 +1,49 @@
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
     <header
         android:fragment="me.phh.treble.app.MyDeviceSettingsFragment"
-        android:title="ƒ}ƒCƒfƒoƒCƒX" />
+        android:title="è‡ªåˆ†ã®ç«¯æœ«" />
     <header
         android:fragment="me.phh.treble.app.OnePlusSettingsFragment"
-        android:title="OnePlus‚Ì‹@”\" />
+        android:title="OnePlus è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.NubiaSettingsFragment"
-        android:title="Nubia‚Ì‹@”\" />
+        android:title="Nubia è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.VsmartSettingsFragment"
-        android:title="Vsmart‚Ì‹@”\" />
+        android:title="Vsmart è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.QualcommSettingsFragment"
-        android:title="Qualcomm‚Ì‹@”\" />
+        android:title="Qualcomm è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.HuaweiSettingsFragment"
-        android:title="Huawei‚Ì‹@”\" />
+        android:title="Huawei è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.SamsungSettingsFragment"
-        android:title="Samsung‚Ì‹@”\" />
+        android:title="Samsung è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.LenovoSettingsFragment"
-        android:title="Lenovo‚Ì‹@”\" />
+        android:title="Lenovo è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.XiaomiSettingsFragment"
-        android:title="Xiaomi‚Ì‹@”\" />
+        android:title="Xiaomi è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.OppoSettingsFragment"
-        android:title="OPPO‚Ì‹@”\" />
+        android:title="OPPO è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.DozeSettingsFragment"
-        android:title="Doze‚Ì‹@”\" />
+        android:title="Doze è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.MiscSettingsFragment"
-        android:title="‚»‚Ì‘¼‚Ì‹@”\" />
+        android:title="ãã®ä»–ã®æ©Ÿèƒ½" />
     <header
         android:fragment="me.phh.treble.app.ImsSettingsFragment"
-        android:title="IMS‚Ì‹@”\" />
+        android:title="IMS è¨­å®š" />
     <header
         android:fragment="me.phh.treble.app.CustomSettingsFragment"
-        android:title="ƒJƒXƒ^ƒ}ƒCƒY" />
+        android:title="ã‚«ã‚¹ã‚¿ãƒžã‚¤ã‚º" />
     <header
         android:id="@+id/updater"
-        android:title="ƒAƒbƒvƒf[ƒg">
+        android:title="ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆ">
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"
                 android:targetClass=".UpdaterActivity"/>
     </header>

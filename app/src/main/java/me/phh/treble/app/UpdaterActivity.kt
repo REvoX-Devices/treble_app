@@ -252,10 +252,13 @@ class UpdaterActivity : PreferenceActivity() {
 
     private fun getVariant() : String {
         var flavor = SystemProperties.get("ro.build.flavor").replace(Regex("-user(debug)?"), "")
-        val secure = File("/system/phh/secure")
+        val kidsSupervision = File("/system/product/app/KidsSupervisionStub/KidsSupervisionStub.apk")
+        val velvet = File("/system/product/priv-app/Velvet/Velvet.apk")
         val vndklite = File("/system_ext/apex/com.android.vndk.v27/etc/vndkcore.libraries.27.txt")
-        if (secure.exists()) {
-            flavor += "-secure"
+        if (!kidsSupervision.exists()) {
+            flavor += "-mini"
+        } else if (!velvet.exists()) {
+            flavor += "-slim"
         } else if (vndklite.exists()) {
             flavor += "-vndklite"
         }

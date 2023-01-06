@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">PhhTrebleApp</string>
     <string name="title_activity_settings">設定</string>
-    <string name="title_activity_top_level">Phh Trebleの設定</string>
+    <string name="title_activity_top_level">Phh Treble の設定</string>
     <string name="desc_activity_top_level">デバイス固有の設定</string>
-    <string name="remove_telephony_subsystem">Telephonyサブシステムを削除</string>
-    <string name="remove_root">Rootを削除</string>
-    <string name="continue_question">続行をしますか?</string>
+    <string name="remove_telephony_subsystem">Telephony サブシステムを削除</string>
+    <string name="remove_root">Root を削除</string>
+    <string name="continue_question">続行をしますか？</string>
     <string name="title_activity_updater">アップデート</string>
     <string name="update_not_found_title">使用中のシステムは最新です</string>
     <string name="update_found_title">システムアップデートが可能です</string>
@@ -22,9 +22,9 @@
     <string name="downloading_update_title">システムアップデートをダウンロード中です</string>
     <string name="applying_update_title">システムアップデートを適用中です</string>
     <string name="applied_update_title">アップデートが正常に適用されました</string>
-    <string name="prevent_exit_message">現在アップデートを実行中です。\nアプリを終了するとアップデートを中止しますが、宜しいですか?</string>
+    <string name="prevent_exit_message">現在アップデートを実行中です。\nアプリを終了するとアップデートを中止しますが、宜しいですか？</string>
     <string name="warning_dialog_title">警告</string>
-    <string name="magisk_exists_message">Magiskを検出しました!アップデートを続行した場合、Magiskの機能を失うかアップデートのインストールに失敗する可能性があります!</string>
-    <string name="menu_delete_ota">OTAファイルを削除</string>
-    <string name="delete_ota_message">このまま続行をするとユーザーデータが消失する可能性がある事を考慮してください!\nユーザーデータの消失を防ぐにはこのダイアログをキャンセルして、fastbootモードで最新のアップデートを焼いてください。</string>
+    <string name="magisk_exists_message">Magisk を検出しました！アップデートを続行した場合、Magisk の機能を失うかアップデートのインストールに失敗する可能性があります！</string>
+    <string name="menu_delete_ota">OTA ファイルを削除</string>
+    <string name="delete_ota_message">このまま続行をするとユーザーデータが消失する可能性がある事を考慮してください！\nユーザーデータの消失を防ぐにはこのダイアログをキャンセルして、fastboot で最新のアップデートを適用してください。</string>
 </resources>
