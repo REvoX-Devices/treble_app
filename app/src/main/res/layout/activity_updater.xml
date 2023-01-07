@@ -26,14 +26,16 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:layout_gravity="center_horizontal" />
+
         <TextView
             android:id="@+id/txt_update_title"
-            android:text="@string/update_not_found_title"
+            style="@style/TextAppearance.AppCompat.Display1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
+            android:text="@string/update_not_found_title"
             android:textAlignment="center"
-            style="@style/TextAppearance.AppCompat.Display1" />
+            android:textSize="30sp" />
         <TextView
             android:id="@+id/txt_update_description"
             android:layout_width="match_parent"
