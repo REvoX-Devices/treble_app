@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:android="http://schemas.android.com/apk/res/android">
-	<Preference android:title="システム UI 調整ツール">
+	<Preference
+		android:title="システム UI 調整ツール"
+		app:summary="ツールが正常に表示されない場合があります。\n表示されない場合は、System UI Tuner アプリを使用してください。">
 		<intent
 			android:action="android.intent.action.VIEW"
 			android:targetClass="com.android.systemui.DemoMode"
