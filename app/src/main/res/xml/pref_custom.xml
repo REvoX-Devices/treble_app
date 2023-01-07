@@ -16,7 +16,7 @@
 			android:entryValues="@array/pref_custom_accent_color_values"
 			android:key="key_custom_accent_color"
 			android:title="色"
-			app:summary="表示色を変更" />
+			app:summary="表示色を設定" />
 		<ListPreference
 			android:defaultValue=""
 			android:entries="@array/pref_custom_icon_shape"
