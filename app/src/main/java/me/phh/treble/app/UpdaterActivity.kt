@@ -147,7 +147,7 @@ class UpdaterActivity : PreferenceActivity() {
 
         val update_title = findViewById(R.id.txt_update_title) as TextView
         val update_description = findViewById(R.id.txt_update_description) as TextView
-        var update_description_text = "Android のバージョン: " + getAndroidVersion() + "\n"
+        var update_description_text = "Android バージョン: " + getAndroidVersion() + "\n"
         update_description_text += "Android セキュリティ アップデート: " + getPatchDate() + "\n\n"
         update_description_text += "GSI タイプ: " + getVariant() + "\n"
 
@@ -265,11 +265,11 @@ class UpdaterActivity : PreferenceActivity() {
         val velvet = File("/system/product/priv-app/Velvet/Velvet.apk")
         val vndklite = File("/system_ext/apex/com.android.vndk.v27/etc/vndkcore.libraries.27.txt")
         if (!kidsSupervision.exists()) {
-            flavor += "mini"
+            flavor = "mini"
         } else if (!velvet.exists()) {
-            flavor += "slim"
+            flavor = "slim"
         } else if (vndklite.exists()) {
-            flavor += "vndklite"
+            flavor = "vndklite"
         }
         Log.e("PHH", "Device variant is: " + flavor)
         return flavor
