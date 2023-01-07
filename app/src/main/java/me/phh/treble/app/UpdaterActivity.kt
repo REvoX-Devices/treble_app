@@ -153,7 +153,7 @@ class UpdaterActivity : PreferenceActivity() {
 
         if (hasUpdate) {
             update_description_text = getUpdateDescritpion() + "\n\n"
-            update_description_text += "アップデートバージョン: " + getUpdateVersion() + "\n"
+            update_description_text += "バージョン: " + getUpdateVersion() + "\n"
             update_description_text += "更新サイズ: " + getUpdateSize()
             update_title.text = getString(R.string.update_found_title)
             btn_update.text = getString(R.string.update_found_button)
@@ -260,16 +260,16 @@ class UpdaterActivity : PreferenceActivity() {
     }
 
     private fun getVariant() : String {
-        var flavor = SystemProperties.get("ro.build.flavor").replace(Regex("-user(debug)?"), "")
+        var flavor = "normal"
         val kidsSupervision = File("/system/product/app/KidsSupervisionStub/KidsSupervisionStub.apk")
         val velvet = File("/system/product/priv-app/Velvet/Velvet.apk")
         val vndklite = File("/system_ext/apex/com.android.vndk.v27/etc/vndkcore.libraries.27.txt")
         if (!kidsSupervision.exists()) {
-            flavor += "-mini"
+            flavor += "mini"
         } else if (!velvet.exists()) {
-            flavor += "-slim"
+            flavor += "slim"
         } else if (vndklite.exists()) {
-            flavor += "-vndklite"
+            flavor += "vndklite"
         }
         Log.e("PHH", "Device variant is: " + flavor)
         return flavor
