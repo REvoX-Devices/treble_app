@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="Fingerprint">
         <CheckBoxPreference
             android:defaultValue="false"
@@ -14,15 +15,16 @@
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="key_huawei_no_hwcomposer"
-            android:title="グラフィックの問題を回避 (UIがぼやけている場合に推奨)" />
+            android:title="グラフィックの問題を回避"
+            app:summary="UI がぼやけている場合、有効にすると解決する場合があります。" />
     </PreferenceCategory>
     <PreferenceCategory android:title="その他">
-	    <ListPreference
-		    android:defaultValue="-1"
-		    android:entries="@array/pref_huawei_fast_charge"
-		    android:entryValues="@array/pref_huawei_fast_charge_values"
-		    android:key="key_huawei_fast_charge"
-		    android:title="高速充電" />
+        <ListPreference
+            android:defaultValue="-1"
+            android:entries="@array/pref_huawei_fast_charge"
+            android:entryValues="@array/pref_huawei_fast_charge_values"
+            android:key="key_huawei_fast_charge"
+            android:title="急速充電" />
     </PreferenceCategory>
 
 </PreferenceScreen>

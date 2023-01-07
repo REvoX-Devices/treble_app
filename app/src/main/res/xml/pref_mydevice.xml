@@ -3,8 +3,9 @@
 	xmlns:android="http://schemas.android.com/apk/res/android">
 	<Preference android:title="デバイスのメンテナ"
         android:key="key_mydevice_maintainer" />
-	<Preference android:title="デバイスのTelegramグループコミュニティ"
-        android:key="key_mydevice_telegram_group" />
+	<Preference
+		android:key="key_mydevice_telegram_group"
+		android:title="デバイスの Telegram グループコミュニティ" />
 	<Preference android:title="プリセットの適用"
         android:key="key_mydevice_apply_presets" />
 </PreferenceScreen>

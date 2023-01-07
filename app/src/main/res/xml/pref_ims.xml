@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
 	xmlns:android="http://schemas.android.com/apk/res/android">
-    <Preference android:title="IMSのAPNを作成"
-        android:key="key_ims_create_apn" />
-    <Preference android:title="IMSのAPKをダウンロードとインストール"
-        android:key="key_ims_install_apn" />
+    <Preference
+        android:key="key_ims_create_apn"
+        android:title="IMS APN を作成" />
+    <Preference
+        android:key="key_ims_install_apn"
+        android:title="IMS の APK をダウンロード" />
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="key_ims_request_network"
@@ -12,5 +14,5 @@
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="key_ims_force_enable_setting"
-        android:title="4G通話(VoLTE)設定を強制的に有効" />
+        android:title="4G 通話 (VoLTE) 設定を有効" />
 </PreferenceScreen>

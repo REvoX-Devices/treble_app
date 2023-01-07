@@ -5,7 +5,7 @@
     <string name="desc_activity_top_level">デバイス固有の設定</string>
     <string name="remove_telephony_subsystem">Telephony サブシステムを削除</string>
     <string name="remove_root">Root を削除</string>
-    <string name="continue_question">続行をしますか？</string>
+    <string name="continue_question">続行しますか？</string>
     <string name="title_activity_updater">システム アップデート</string>
     <string name="update_not_found_title">お使いのシステムは最新の状態です</string>
     <string name="update_found_title">システム アップデートが利用可能</string>
@@ -13,7 +13,7 @@
     <string name="update_found_button">ダウンロードとインストール</string>
     <string name="update_not_found_button">アップデートをチェック</string>
     <string name="error_dialog_title">エラー</string>
-    <string name="dynamic_device_message">使用中のデバイスは、システム アップデートに対応していません。</string>
+    <string name="dynamic_device_message">お使いのデバイスはシステム アップデートに対応していません。</string>
     <string name="update_error_message">ダウンロード中にエラーが発生しました。\n後ほどに再試行をしてください。</string>
     <string name="success_install_message">最新のアップデートが正常にインストールされました。\n今すぐに再起動をしてください。</string>
     <string name="failed_download_message">最新のアップデートのダウンロードに失敗しました。\n詳細はログを確認してください。</string>

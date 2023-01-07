@@ -19,10 +19,10 @@
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="key_oppo_usb_otg"
-            android:title="USB OTGを有効" />
+            android:title="USB OTG を有効" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="key_oppo_dc_diming"
-            android:title="DC調光を有効" />
+            android:title="DC 調光を有効" />
     </PreferenceCategory>
 </PreferenceScreen>

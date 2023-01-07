@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:android="http://schemas.android.com/apk/res/android">
-    <Preference android:title="System UI Tuner">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:targetPackage="com.android.systemui"
-            android:targetClass="com.android.systemui.DemoMode" />
-    </Preference>
+	<Preference android:title="システム UI 調整ツール">
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:targetClass="com.android.systemui.DemoMode"
+			android:targetPackage="com.android.systemui" />
+	</Preference>
     <PreferenceCategory android:title="スタイル">
-	<ListPreference
-		android:defaultValue=""
-            android:entries="@array/pref_custom_accent_color"
-            android:entryValues="@array/pref_custom_accent_color_values"
-            android:key="key_custom_accent_color"
-		android:title="アクセントカラー" />
-	<ListPreference
-		android:defaultValue=""
-            android:entries="@array/pref_custom_icon_shape"
-            android:entryValues="@array/pref_custom_icon_shape_values"
-            android:key="key_custom_icon_shape"
-		android:title="アイコンシェイプ" />
-	<ListPreference
-		android:defaultValue=""
-            android:entries="@array/pref_custom_icon_pack"
-            android:entryValues="@array/pref_custom_icon_pack_values"
-            android:key="key_custom_icon_pack"
-		android:title="アイコンパック" />
-	<ListPreference
-		android:defaultValue=""
-            android:entries="@array/pref_custom_font_family"
-            android:entryValues="@array/pref_custom_font_family_values"
-            android:key="key_custom_font_family"
-		android:title="フォントファミリー" />
+		<ListPreference
+			android:defaultValue=""
+			android:entries="@array/pref_custom_accent_color"
+			android:entryValues="@array/pref_custom_accent_color_values"
+			android:key="key_custom_accent_color"
+			android:title="色"
+			app:summary="表示色を変更" />
+		<ListPreference
+			android:defaultValue=""
+			android:entries="@array/pref_custom_icon_shape"
+			android:entryValues="@array/pref_custom_icon_shape_values"
+			android:key="key_custom_icon_shape"
+			android:title="アイコンの形状"
+			app:summary="アプリアイコンの表示形状を設定" />
+		<ListPreference
+			android:defaultValue=""
+			android:entries="@array/pref_custom_icon_pack"
+			android:entryValues="@array/pref_custom_icon_pack_values"
+			android:key="key_custom_icon_pack"
+			android:title="アイコンパック"
+			app:summary="通知バーのスタイルを設定" />
+		<ListPreference
+			android:defaultValue=""
+			android:entries="@array/pref_custom_font_family"
+			android:entryValues="@array/pref_custom_font_family_values"
+			android:key="key_custom_font_family"
+			android:title="フォント"
+			app:summary="システムフォントを設定" />
     </PreferenceCategory>
 </PreferenceScreen>
