@@ -16,27 +16,27 @@
 			android:entryValues="@array/pref_custom_accent_color_values"
 			android:key="key_custom_accent_color"
 			android:title="色"
-			app:summary="表示色を設定" />
+			app:summary="表示色を変更" />
 		<ListPreference
 			android:defaultValue=""
 			android:entries="@array/pref_custom_icon_shape"
 			android:entryValues="@array/pref_custom_icon_shape_values"
 			android:key="key_custom_icon_shape"
 			android:title="アイコンの形状"
-			app:summary="アプリアイコンの表示形状を設定" />
+			app:summary="アプリアイコンの表示形状を変更" />
 		<ListPreference
 			android:defaultValue=""
 			android:entries="@array/pref_custom_icon_pack"
 			android:entryValues="@array/pref_custom_icon_pack_values"
 			android:key="key_custom_icon_pack"
 			android:title="アイコンパック"
-			app:summary="通知バーのスタイルを設定" />
+			app:summary="通知バーのスタイルを変更" />
 		<ListPreference
 			android:defaultValue=""
 			android:entries="@array/pref_custom_font_family"
 			android:entryValues="@array/pref_custom_font_family_values"
 			android:key="key_custom_font_family"
 			android:title="フォント"
-			app:summary="システムフォントを設定" />
+			app:summary="システムフォントを変更" />
     </PreferenceCategory>
 </PreferenceScreen>
