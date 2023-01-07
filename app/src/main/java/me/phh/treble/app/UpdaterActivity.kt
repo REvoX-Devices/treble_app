@@ -147,13 +147,14 @@ class UpdaterActivity : PreferenceActivity() {
 
         val update_title = findViewById(R.id.txt_update_title) as TextView
         val update_description = findViewById(R.id.txt_update_description) as TextView
-        var update_description_text = "Android version: " + getAndroidVersion() + "\n"
-        update_description_text += "GSI variant: " + getVariant() + "\n"
-        update_description_text += "Security patch: " + getPatchDate() + "\n\n"
+        var update_description_text = "Android のバージョン: " + getAndroidVersion() + "\n"
+        update_description_text += "Android セキュリティ アップデート: " + getPatchDate() + "\n\n"
+        update_description_text += "GSI タイプ: " + getVariant() + "\n"
 
         if (hasUpdate) {
-            update_description_text += "Update version: " + getUpdateVersion() + "\n"
-            update_description_text += "Download size: " + getUpdateSize()
+            update_description_text = getUpdateDescritpion() + "\n\n"
+            update_description_text += "アップデートバージョン: " + getUpdateVersion() + "\n"
+            update_description_text += "更新サイズ: " + getUpdateSize()
             update_title.text = getString(R.string.update_found_title)
             btn_update.text = getString(R.string.update_found_button)
         } else if (!wasUpdated) {
@@ -172,6 +173,14 @@ class UpdaterActivity : PreferenceActivity() {
         Log.e("PHH", "Security patch date: " + patchDate)
         val localDate = LocalDate.parse(patchDate, DateTimeFormatter.ofPattern("yyyy-MM-dd"))
         return localDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG))
+    }
+
+    private fun getUpdateDescritpion() : String {
+        if (otaJson.length() > 0) {
+            return otaJson.getString("description").replace("\\n", "\n");
+        }
+        Log.e("PHH", "OTA json is empty")
+        return ""
     }
 
     private fun getUpdateVersion() : String {
