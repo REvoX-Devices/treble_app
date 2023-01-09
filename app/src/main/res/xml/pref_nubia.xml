@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="タッチスクリーン">
+    <PreferenceCategory android:title="ディスプレイ">
         <CheckBoxPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="nubia_double_tap_to_wake"
-            android:title="ダブルタップで起動を有効" />
+            android:title="ダブルタップで画面を起動" />
         <CheckBoxPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="nubia_touchscreen_game_mode"
-            android:title="ゲームモードを有効" />
+            android:title="ゲームモードを有効にする" />
     </PreferenceCategory>
     <PreferenceCategory android:title="その他">
 	    <ListPreference
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="nubia_redmagic_logo_breath"
-            android:title="REDMAGICロゴのブレス" />
+            android:title="REDMAGIC ロゴのブレス" />
 	    <ListPreference
 		    android:defaultValue="-1"
 		    android:entries="@array/pref_nubia_redmagic_led"
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="nubia_boost_cpu"
-            android:title="CPUをブースト" />
+            android:title="CPU をブースト" />
         <CheckBoxPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,6 +54,6 @@
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="nubia_boost_gpu"
-            android:title="GPUをブースト" />
+            android:title="GPU をブースト" />
     </PreferenceCategory>
 </PreferenceScreen>

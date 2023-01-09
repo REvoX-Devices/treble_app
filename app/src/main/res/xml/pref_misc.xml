@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:android="http://schemas.android.com/apk/res/android">
-	<Preference android:title="Sponsor phh"
-        android:key="key_sponsor">
+	<Preference
+		android:key="key_sponsor"
+		android:title="phh に寄付する">
 		<intent
-		    android:action="android.intent.action.VIEW"
-		    android:data="https://github.com/sponsors/phhusson/" />
+			android:action="android.intent.action.VIEW"
+			android:data="https://github.com/sponsors/phhusson/" />
 	</Preference>
 	<PreferenceCategory android:title="モバイルネットワーク">
 		<ListPreference
@@ -28,7 +29,7 @@
 		<CheckBoxPreference
 			android:defaultValue="false"
 			android:key="key_misc_disable_audio_effects"
-			android:title="イコライザを無効" />
+			android:title="イコライザを無効にする" />
 	</PreferenceCategory>
 	<PreferenceCategory android:title="画面">
 		<EditTextPreference
@@ -47,26 +48,26 @@
 			android:entries="@array/pref_misc_fps_divisor"
 			android:entryValues="@array/pref_misc_fps_divisor_values"
 			android:key="key_misc_fps_divisor"
-			android:title="FPS除数" />
+			android:title="FPS 除数" />
 		<ListPreference
 			android:defaultValue="-1"
 			android:entries="@array/pref_misc_display_fps"
 			android:entryValues="@array/pref_misc_display_fps_values"
 			android:key="key_misc_display_fps"
-			android:title="FPSを強制的に変更" />
-        <Preference
-            android:key="key_misc_restart_systemui"
-            android:title="SystemUIを再起動"
-            android:summary="画面の解像度を変更後に推奨します。\nRoot権限が必要です。" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="key_misc_no_hwcomposer"
-            android:title="ハードウェアオーバーレイを無効"
-            android:summary="CPUとバッテリーを多く消費するようになります。" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="key_misc_aod"
-            android:title="Always-On Displayを強制的に表示" />
+			android:title="解像度を強制的に変更" />
+		<Preference
+			android:key="key_misc_restart_systemui"
+			android:summary="画面の解像度を変更後に実行することを推奨します。\nroot 権限が必要です。"
+			android:title="System UI を再起動" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="key_misc_no_hwcomposer"
+			android:summary="CPU とバッテリーを多く消費するようになります。"
+			android:title="ハードウェアオーバーレイを無効にする" />
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:key="key_misc_aod"
+			android:title="Always On Display を強制的に表示する" />
 	</PreferenceCategory>
 	<PreferenceCategory android:title="バックライト">
 		<CheckBoxPreference
@@ -120,17 +121,17 @@
 		<CheckBoxPreference
 			android:defaultValue="false"
 			android:key="key_misc_force_a2dp_offload_disable"
-			android:title="A2DP オフロードを強制的に無効" />
+			android:title="A2DP オフロードを強制的に無効にする" />
 		<CheckBoxPreference
-            android:defaultValue="false"
-            android:key="key_misc_force_navbar_off"
-            android:title="強制的にナビゲーションバーを無効"
-            android:summary="再起動が必要です。" />
+			android:defaultValue="false"
+			android:key="key_misc_force_navbar_off"
+			android:summary="再起動が必要です。"
+			android:title="強制的にナビゲーションバーを無効にする" />
 		<CheckBoxPreference
 			android:defaultValue="false"
 			android:key="key_misc_storage_fuse"
 			android:summary="ストレージの速度が減少または増加する可能性があります。\n再起動が必要です。"
-			android:title="FUSE ストレージレイヤーを無効" />
+			android:title="FUSE ストレージレイヤーを無効にする" />
 		<CheckBoxPreference
 			android:defaultValue="false"
 			android:key="key_misc_restart_ril"
@@ -138,8 +139,8 @@
 		<CheckBoxPreference
 			android:defaultValue="false"
 			android:key="key_misc_dt2w"
-			android:summary="この機能は正常に動作しない可能性があります。"
-			android:title="ダブルタップで起動" />
+			android:summary="この機能は正常に動作しない可能性があります"
+			android:title="ダブルタップで画面を起動" />
 		<ListPreference
 		    android:defaultValue="00ff00"
 		    android:entries="@array/pref_misc_fod_color"

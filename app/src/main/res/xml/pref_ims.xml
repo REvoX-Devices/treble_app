@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-	xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <Preference
         android:key="key_ims_create_apn"
         android:title="IMS APN を作成" />
@@ -10,9 +10,10 @@
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="key_ims_request_network"
-        android:title="IMSネットワークを要求する" />
+        android:title="IMS 登録をネットワークに要求する" />
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="key_ims_force_enable_setting"
-        android:title="4G 通話 (VoLTE) 設定を有効" />
+        android:title="4G 通話設定オプションを表示する"
+        app:summary="有効にすると、SIM 設定から 「VoLTE、LTE サービスを使用して音声通話を改善」するオプションが表示されるようになります。" />
 </PreferenceScreen>

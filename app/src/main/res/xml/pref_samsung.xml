@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="オーディオ">
         <CheckBoxPreference
             android:defaultValue="false"
@@ -14,7 +15,7 @@
             android:entries="@array/pref_samsung_transport_size"
             android:entryValues="@array/pref_samsung_transport_size_values"
             android:key="key_samsung_esco_transport_unit_size"
-            android:title="eSCO転送ユニットサイズを設定" />
+            android:title="eSCO 転送ユニットサイズを設定" />
     </PreferenceCategory>
     <PreferenceCategory android:title="画面">
         <CheckBoxPreference
@@ -30,11 +31,12 @@
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="key_samsung_wireless_charging_transmit"
-            android:title="リバースワイヤレス充電を有効(該当時のみ)" />
+            android:title="ワイヤレスバッテリー共有"
+            app:summary="対応機種のみで使用することができ、端末の背面に別のデバイスを重ねておくと重ねた端末を充電することができます。" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="key_samsung_double_tap_to_wake"
-            android:title="ダブルタップで起動で有効" />
+            android:title="ダブルタップで画面を起動" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="key_samsung_fod_single_click"

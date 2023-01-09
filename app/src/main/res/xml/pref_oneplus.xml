@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="画面">
-	    <ListPreference
-		android:defaultValue="default"
-		android:entries="@array/pref_oneplus_display_mode"
-		android:entryValues="@array/pref_oneplus_display_mode_values"
-		android:key="key_oneplus_display_mode"
-		android:title="画面モード" />
+    <PreferenceCategory android:title="ディスプレイ">
+        <ListPreference
+            android:defaultValue="default"
+            android:entries="@array/pref_oneplus_display_mode"
+            android:entryValues="@array/pref_oneplus_display_mode_values"
+            android:key="key_oneplus_display_mode"
+            android:title="画面モード" />
         <ListPreference
             android:defaultValue="0"
             android:entries="@array/pref_oneplus_display_high_brightness"
@@ -19,12 +19,12 @@
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="key_oneplus_usb_otg"
-            android:title="USB OTG を有効" />
+            android:title="USB OTG を有効にする" />
         <CheckBoxPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="key_oneplus_double_tap_to_wake"
-            android:title="ダブルタップで起動を有効" />
+            android:title="ダブルタップで画面を起動" />
     </PreferenceCategory>
 </PreferenceScreen>
