@@ -409,7 +409,7 @@ class UpdaterActivity : PreferenceActivity() {
             update_title.text = getString(R.string.downloading_update_title)
             progress_bar.setIndeterminate(false)
             progress_bar.setProgress(0)
-            progress_text.text = "Downloading 0%"
+            progress_text.text = "0% ダウンロード中..."
             progress_bar.setVisibility(View.VISIBLE)
             progress_text.setVisibility(View.VISIBLE)
         })
@@ -450,7 +450,7 @@ class UpdaterActivity : PreferenceActivity() {
                 runOnUiThread(Runnable {
                     if (extProgress < 100) {
                         progress_bar.setProgress(extProgress.toInt())
-                        progress_text.text = "Downloading " + extProgress.toInt().toString() + "%"
+                        progress_text.text = extProgress.toInt().toString() + "% ダウンロード中..."
                     }
                 })
                 return n
