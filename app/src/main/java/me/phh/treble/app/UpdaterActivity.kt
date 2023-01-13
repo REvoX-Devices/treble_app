@@ -261,10 +261,10 @@ class UpdaterActivity : PreferenceActivity() {
 
     private fun getVariant() : String {
         var flavor = "normal"
-        val kidsSupervision = File("/system/product/app/KidsSupervisionStub/KidsSupervisionStub.apk")
+        val trichromeLibrary = File("/system/product/app/TrichromeLibrary/TrichromeLibrary.apk.gz")
         val velvet = File("/system/product/priv-app/Velvet/Velvet.apk")
         val vndklite = File("/system_ext/apex/com.android.vndk.v27/etc/vndkcore.libraries.27.txt")
-        if (!kidsSupervision.exists()) {
+        if (!trichromeLibrary.exists()) {
             flavor = "mini"
         } else if (!velvet.exists()) {
             flavor = "slim"
