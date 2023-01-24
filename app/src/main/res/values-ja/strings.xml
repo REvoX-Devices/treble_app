@@ -26,5 +26,5 @@
     <string name="warning_dialog_title">警告</string>
     <string name="magisk_exists_message">Magisk を検出しました。このままアップデートを続行した場合、システムが正常に動作しなくなる可能性があります。</string>
     <string name="menu_delete_ota">OTA ファイルを削除</string>
-    <string name="delete_ota_message">続行するとユーザーデータが消失する可能性がある事を考慮してください！\nユーザーデータの消失を防ぐにはこのダイアログをキャンセルして、fastboot で最新のアップデートを適用してください。</string>
+    <string name="delete_ota_message">OTA ファイルを削除し、再起動すると最後に Fastboot で書き込んだシステムが起動します。これによりシステムが起動しなくなる可能性があるため、OTA ファイルの削除を行う前に必ず Fastboot から最新のシステムファイルを書き込んでください。</string>
 </resources>
