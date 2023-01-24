@@ -390,7 +390,7 @@ class UpdaterActivity : PreferenceActivity() {
         runOnUiThread(Runnable {
             update_title.text = getString(R.string.preparing_update_title)
             progress_bar.setIndeterminate(true)
-            progress_text.text = "Preparing storage for OTA..."
+            progress_text.text = "アップデート準備をしています..."
             progress_bar.setVisibility(View.VISIBLE)
             progress_text.setVisibility(View.VISIBLE)
         })
@@ -494,7 +494,7 @@ class UpdaterActivity : PreferenceActivity() {
 
         runOnUiThread(Runnable {
             update_title.text = getString(R.string.applying_update_title)
-            progress_text.text = "Switching slot..."
+            progress_text.text = "アップデート中..."
             progress_bar.setVisibility(View.VISIBLE)
             progress_text.setVisibility(View.VISIBLE)
         })
@@ -509,7 +509,7 @@ class UpdaterActivity : PreferenceActivity() {
         }
 
         runOnUiThread(Runnable {
-            progress_text.text = "Switched slot. OTA finalized."
+            progress_text.text = "アップデートが完了しました。"
         })
     }
 }
