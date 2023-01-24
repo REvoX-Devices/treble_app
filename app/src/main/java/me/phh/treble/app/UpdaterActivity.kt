@@ -154,6 +154,7 @@ class UpdaterActivity : PreferenceActivity() {
         if (hasUpdate) {
             update_description_text = getUpdateDescritpion() + "\n\n"
             update_description_text += "バージョン: " + getUpdateVersion() + "\n"
+            update_description_text += "GSI タイプ: " + getVariant() + "\n\n"
             update_description_text += "更新サイズ: " + getUpdateSize()
             update_title.text = getString(R.string.update_found_title)
             btn_update.text = getString(R.string.update_found_button)
