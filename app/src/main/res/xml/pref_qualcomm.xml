@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference
+    <SwitchPreference
         android:defaultValue="false"
         android:key="key_qualcomm_alternate_mediaprofile"
         android:title="代替のカメラプロファイルを使用する"
         android:summary="再起動が必要です。" />
-    <CheckBoxPreference
+    <SwitchPreference
         android:defaultValue="false"
         android:key="key_qualcomm_alternate_audiopolicy"
         android:title="代替のオーディオポリシーを使用する" />
-    <CheckBoxPreference
+    <SwitchPreference
         android:defaultValue="false"
         android:key="key_qualcomm_disable_soundvolume_effect"
         android:title="サウンドボリュームエフェクトを無効にする"
         android:summary="音の乱れを改善する事ができます。" />
-    <CheckBoxPreference
+    <SwitchPreference
         android:defaultValue="false"
         android:key="key_qualcomm_disable_stereo_voip"
         android:summary="高音域の音声の問題を修正できる可能性があります。再起動が必要です。"

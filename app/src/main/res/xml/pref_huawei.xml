@@ -2,17 +2,17 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="Fingerprint">
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_huawei_fingerprint_gestures"
             android:title="指紋ジェスチャーを有効" />
     </PreferenceCategory>
     <PreferenceCategory android:title="Display">
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_huawei_touchscreen_glove_mode"
             android:title="手袋モードを有効" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_huawei_no_hwcomposer"
             android:title="グラフィックの問題を回避"

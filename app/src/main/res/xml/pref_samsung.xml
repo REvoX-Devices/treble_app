@@ -2,15 +2,15 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="オーディオ">
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_alternate_audio_policy"
             android:title="代替のオーディオポリシーを使用する" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_audio_stereo"
             android:title="ステレオオーディオモードを有効" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_disable_back_mic"
             android:title="Disable Built-In Back Mic"
@@ -23,30 +23,30 @@
             android:title="eSCO 転送ユニットサイズを設定" />
     </PreferenceCategory>
     <PreferenceCategory android:title="画面">
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_high_brightness"
             android:title="輝度レンジの拡張を可能にする" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_glove_mode"
             android:title="手袋モードを有効" />
     </PreferenceCategory>
     <PreferenceCategory android:title="その他">
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_wireless_charging_transmit"
             android:title="ワイヤレスバッテリー共有"
             app:summary="対応機種のみで使用することができ、端末の背面に別のデバイスを重ねておくと重ねた端末を充電することができます。" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_double_tap_to_wake"
             android:title="ダブルタップで画面を起動" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_fod_single_click"
             android:title="指紋センサーをクリックで画面を点灯" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_camera_ids"
             android:title="すべてのカメラにアクセス可能にする"
@@ -59,15 +59,15 @@
 	        android:inputType="number" />
     </PreferenceCategory>
     <PreferenceCategory android:title="回避策">
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_extra_sensors"
             android:title="追加のセンサーを有効" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_colorspace"
             android:title="白い画面の回避策を有効" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_broken_fingerprint"
             android:title="指紋認証が壊れた場合の回避策を有効" />

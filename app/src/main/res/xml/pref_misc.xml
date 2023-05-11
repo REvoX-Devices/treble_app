@@ -17,16 +17,16 @@
 		    android:title="シグナルメーターの方式" />
 	</PreferenceCategory>
 	<PreferenceCategory android:title="オーディオ">
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_huawei_headset_fix"
 			android:title="強制的にヘッドセットに切り替え"
 			app:summary="Huawei デフォルト設定" />
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_headset_devinput"
 			android:title="別の方法でヘッドセットを検出する" />
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_disable_audio_effects"
 			android:title="イコライザを無効にする" />
@@ -59,41 +59,41 @@
 			android:key="key_misc_restart_systemui"
 			android:summary="画面の解像度を変更後に実行することを推奨します。\nroot 権限が必要です。"
 			android:title="System UI を再起動" />
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_no_hwcomposer"
 			android:summary="CPU とバッテリーを多く消費するようになります。"
 			android:title="ハードウェアオーバーレイを無効にする" />
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_aod"
 			android:title="Always On Display を強制的に表示する" />
 	</PreferenceCategory>
 	<PreferenceCategory android:title="バックライト">
-		<CheckBoxPreference
+		<SwitchPreference
             android:defaultValue="false"
             android:key="key_misc_linear_brightness"
             android:title="明るさのスライダーをリニアにする" />
-		<CheckBoxPreference
+		<SwitchPreference
             android:defaultValue="false"
             android:key="key_misc_disable_buttons_backlight"
             android:title="ハードウェアボタンのバックライトを無効にする"
             android:summary="再起動が必要です。" />
-		<CheckBoxPreference
+		<SwitchPreference
             android:defaultValue="false"
             android:key="key_misc_backlight_scale"
             android:title="バックライトの代替スケールを強制的に有効にする" />
-        <CheckBoxPreference
+        <SwitchPreference
             android:defaultValue="false"
             android:key="key_misc_minimal_brightness"
             android:title="最小の輝度に設定可能にする" />
 	</PreferenceCategory>
 	<PreferenceCategory android:title="カメラ">
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_multi_camera"
 			android:title="AUX カメラの露出" />
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_force_camera2api_hal3"
 			android:title="Camera2API HAL3 を強制的に有効" />
@@ -118,25 +118,25 @@
     	    android:entryValues="@array/pref_misc_max_aspect_ratio_pre_o_values"
     	    android:key="key_misc_max_aspect_ratio_pre_o"
     	    android:title="Compatibility max aspect ratio" />
-		<CheckBoxPreference
+		<SwitchPreference
             android:defaultValue="true"
             android:key="key_misc_dynamic_sysbta"
             android:title="Use System Wide BT HAL" />
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_force_navbar_off"
 			android:summary="再起動が必要です。"
 			android:title="強制的にナビゲーションバーを無効にする" />
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_storage_fuse"
 			android:summary="ストレージの速度が減少または増加する可能性があります。\n再起動が必要です。"
 			android:title="FUSE ストレージレイヤーを無効にする" />
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_restart_ril"
 			android:title="RIL を自動的に再起動" />
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_dt2w"
 			android:summary="この機能は正常に動作しない可能性があります"
@@ -159,7 +159,7 @@
                 android:targetPackage="me.phh.treble.app"
                 android:targetClass="me.phh.treble.app.DebugSensors" />
         </Preference>
-		<CheckBoxPreference
+		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_remotectl"
 			android:title="デバッグのため phh によるデバイスの操作を許可する。" />
