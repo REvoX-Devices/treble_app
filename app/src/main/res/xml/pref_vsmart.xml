@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
     <PreferenceCategory android:title="画面">
+=======
+    <PreferenceCategory android:title="Display">
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_vsmart_dt2w"

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
     <PreferenceCategory android:title="ディスプレイ">
+=======
+    <PreferenceCategory android:title="Touchscreen">
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="nubia_double_tap_to_wake"
+<<<<<<< HEAD
             android:title="ダブルタップで画面を起動" />
+=======
+            android:title="Enable DT2W" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -22,7 +30,11 @@
 		    android:key="nubia_fan_speed"
 		    android:title="ファンの速度" />
     </PreferenceCategory>
+<<<<<<< HEAD
     <PreferenceCategory android:title="LED">
+=======
+    <PreferenceCategory android:title="LEDs">
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,19 +48,31 @@
 		    android:key="nubia_redmagic_led"
 		    android:title="REDMAGIC LED" />
     </PreferenceCategory>
+<<<<<<< HEAD
     <PreferenceCategory android:title="ブースト">
+=======
+    <PreferenceCategory android:title="Boosts">
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="nubia_boost_cpu"
+<<<<<<< HEAD
             android:title="CPU をブースト" />
+=======
+            android:title="Boost CPU" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="nubia_boost_cache"
+<<<<<<< HEAD
             android:title="キャッシュをブースト" />
+=======
+            android:title="Boost caches" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -16,6 +16,7 @@
 		    android:key="key_misc_mobile_signal"
 		    android:title="シグナルメーターの方式" />
 	</PreferenceCategory>
+<<<<<<< HEAD
 	<PreferenceCategory android:title="オーディオ">
 		<SwitchPreference
 			android:defaultValue="false"
@@ -26,6 +27,17 @@
 			android:defaultValue="false"
 			android:key="key_misc_headset_devinput"
 			android:title="別の方法でヘッドセットを検出する" />
+=======
+	<PreferenceCategory android:title="Audio">
+		<SwitchPreference
+            android:defaultValue="false"
+            android:key="key_huawei_headset_fix"
+            android:title="Force headset switch (Huawei default)" />
+		<SwitchPreference
+            android:defaultValue="false"
+            android:key="key_misc_headset_devinput"
+            android:title="Use alternate way to detect headsets" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
 		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_disable_audio_effects"
@@ -54,6 +66,7 @@
 			android:entries="@array/pref_misc_display_fps"
 			android:entryValues="@array/pref_misc_display_fps_values"
 			android:key="key_misc_display_fps"
+<<<<<<< HEAD
 			android:title="解像度を強制的に変更" />
 		<Preference
 			android:key="key_misc_restart_systemui"
@@ -83,16 +96,55 @@
             android:defaultValue="false"
             android:key="key_misc_backlight_scale"
             android:title="バックライトの代替スケールを強制的に有効にする" />
+=======
+			android:title="Force FPS" />
+        <Preference
+            android:key="key_misc_restart_systemui"
+            android:title="Restart SystemUI"
+            android:summary="Recommended after switching display resolution\nRequires root" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_misc_no_hwcomposer"
+            android:title="Disable HW overlays"
+            android:summary="Eats more CPU and battery" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_misc_aod"
+            android:title="Force allow Always-On Display" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Backlight">
+		<SwitchPreference
+            android:defaultValue="false"
+            android:key="key_misc_linear_brightness"
+            android:title="Use linear screen brightness slider" />
+		<SwitchPreference
+            android:defaultValue="false"
+            android:key="key_misc_disable_buttons_backlight"
+            android:title="Disable backlight of hardware buttons if present"
+            android:summary="Requires a reboot" />
+		<SwitchPreference
+            android:defaultValue="false"
+            android:key="key_misc_backlight_scale"
+            android:title="Force alternative backlight scale" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_misc_minimal_brightness"
             android:title="最小の輝度に設定可能にする" />
 	</PreferenceCategory>
+<<<<<<< HEAD
 	<PreferenceCategory android:title="カメラ">
 		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_multi_camera"
 			android:title="AUX カメラの露出" />
+=======
+	<PreferenceCategory android:title="Camera">
+		<SwitchPreference
+			android:defaultValue="false"
+			android:key="key_misc_multi_camera"
+			android:title="Expose Aux cameras" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
 		<SwitchPreference
 			android:defaultValue="false"
 			android:key="key_misc_force_camera2api_hal3"
@@ -123,6 +175,7 @@
             android:key="key_misc_dynamic_sysbta"
             android:title="Use System Wide BT HAL" />
 		<SwitchPreference
+<<<<<<< HEAD
 			android:defaultValue="false"
 			android:key="key_misc_force_navbar_off"
 			android:summary="再起動が必要です。"
@@ -141,6 +194,26 @@
 			android:key="key_misc_dt2w"
 			android:summary="この機能は正常に動作しない可能性があります"
 			android:title="ダブルタップで画面を起動" />
+=======
+            android:defaultValue="false"
+            android:key="key_misc_force_navbar_off"
+            android:title="Force navigation bar disabled"
+            android:summary="Requires a reboot" />
+		<SwitchPreference
+            android:defaultValue="false"
+            android:key="key_misc_storage_fuse"
+            android:title="Disable FUSE storage layer"
+            android:summary="This can (de/in)crease storage speed\nRequires a reboot" />
+		<SwitchPreference
+				android:defaultValue="false"
+				android:key="key_misc_restart_ril"
+				android:title="Automatically restart RIL" />
+		<SwitchPreference
+				android:defaultValue="false"
+				android:key="key_misc_dt2w"
+            android:title="Double tap to wake"
+            android:summary="Unlikely to work for you" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
 		<ListPreference
 		    android:defaultValue="00ff00"
 		    android:entries="@array/pref_misc_fod_color"
@@ -160,8 +233,14 @@
                 android:targetClass="me.phh.treble.app.DebugSensors" />
         </Preference>
 		<SwitchPreference
+<<<<<<< HEAD
 			android:defaultValue="false"
 			android:key="key_misc_remotectl"
 			android:title="デバッグのため phh によるデバイスの操作を許可する。" />
+=======
+            android:defaultValue="false"
+            android:key="key_misc_remotectl"
+            android:title="Allow takeover of the device by phh for debugging" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
     </PreferenceCategory>
 </PreferenceScreen>

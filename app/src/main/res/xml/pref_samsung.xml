@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="オーディオ">
@@ -10,6 +11,18 @@
             android:defaultValue="false"
             android:key="key_samsung_audio_stereo"
             android:title="ステレオオーディオモードを有効" />
+=======
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Audio">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_samsung_alternate_audio_policy"
+            android:title="Use alternate audio policy" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_samsung_audio_stereo"
+            android:title="Enable stereo audio mode" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_disable_back_mic"
@@ -22,16 +35,25 @@
             android:key="key_samsung_esco_transport_unit_size"
             android:title="eSCO 転送ユニットサイズを設定" />
     </PreferenceCategory>
+<<<<<<< HEAD
     <PreferenceCategory android:title="画面">
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_high_brightness"
             android:title="輝度レンジの拡張を可能にする" />
+=======
+    <PreferenceCategory android:title="Screen">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_samsung_high_brightness"
+            android:title="Enable extended brightness range" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_glove_mode"
             android:title="手袋モードを有効" />
     </PreferenceCategory>
+<<<<<<< HEAD
     <PreferenceCategory android:title="その他">
         <SwitchPreference
             android:defaultValue="false"
@@ -46,6 +68,21 @@
             android:defaultValue="false"
             android:key="key_samsung_fod_single_click"
             android:title="指紋センサーをクリックで画面を点灯" />
+=======
+    <PreferenceCategory android:title="Misc">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_samsung_wireless_charging_transmit"
+            android:title="Enable reversed wireless charging(If applicable)" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_samsung_double_tap_to_wake"
+            android:title="Enable double tap to wake" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_samsung_fod_single_click"
+            android:title="Clicking fingerprint turns device on" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_camera_ids"
@@ -58,6 +95,7 @@
 	        android:summary="通常の値は1～5になります。"
 	        android:inputType="number" />
     </PreferenceCategory>
+<<<<<<< HEAD
     <PreferenceCategory android:title="回避策">
         <SwitchPreference
             android:defaultValue="false"
@@ -67,6 +105,17 @@
             android:defaultValue="false"
             android:key="key_samsung_colorspace"
             android:title="白い画面の回避策を有効" />
+=======
+    <PreferenceCategory android:title="Workarounds">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_samsung_extra_sensors"
+            android:title="Enable extra sensors" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_samsung_colorspace"
+            android:title="Enable workaround for white-ish screen" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_samsung_broken_fingerprint"

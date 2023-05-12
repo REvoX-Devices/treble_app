@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+<<<<<<< HEAD
     <PreferenceCategory android:title="ディスプレイ">
+=======
+    <PreferenceCategory android:title="Touchscreen">
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:defaultValue="false"
             android:key="key_oppo_double_tap_to_wake"
+<<<<<<< HEAD
             android:title="ダブルタップで画面を起動" />
+=======
+            android:title="Enable DT2W" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -15,11 +23,19 @@
             android:key="key_oppo_ts_game_mode"
             android:title="ゲームモードを有効" />
     </PreferenceCategory>
+<<<<<<< HEAD
     <PreferenceCategory android:title="その他">
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_oppo_usb_otg"
             android:title="USB OTG を有効にする" />
+=======
+    <PreferenceCategory android:title="Other">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_oppo_usb_otg"
+            android:title="Enable USB OTG" />
+>>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_oppo_dc_diming"
