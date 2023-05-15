@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:android="http://schemas.android.com/apk/res/android">
-	<PreferenceCategory android:title="Android 標準機能">
-		<Preference
-			android:title="システム UI 調整ツール"
-			app:summary="ツールが正常に表示されない場合は、System UI Tuner アプリを使用してください。"/>
-	</PreferenceCategory>
-    <PreferenceCategory android:title="スタイル">
+    <Preference android:title="System UI Tuner">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.DemoMode" />
+    </Preference>
+    <PreferenceCategory android:title="UI">
 		<ListPreference
-			android:defaultValue=""
-			android:entries="@array/pref_custom_accent_color"
-			android:entryValues="@array/pref_custom_accent_color_values"
-			android:key="key_custom_accent_color"
-			android:title="色"
-			app:summary="表示色を変更" />
-		<ListPreference
-			android:defaultValue=""
-			android:entries="@array/pref_custom_icon_shape"
-			android:entryValues="@array/pref_custom_icon_shape_values"
-			android:key="key_custom_icon_shape"
-			android:title="アイコンの形状"
-			app:summary="アプリアイコンの表示形状を変更" />
-		<ListPreference
-			android:defaultValue=""
-			android:entries="@array/pref_custom_icon_pack"
-			android:entryValues="@array/pref_custom_icon_pack_values"
-			android:key="key_custom_icon_pack"
-			android:title="アイコンパック"
-			app:summary="通知バーのスタイルを変更" />
-		<ListPreference
-			android:defaultValue=""
-			android:entries="@array/pref_custom_font_family"
-			android:entryValues="@array/pref_custom_font_family_values"
-			android:key="key_custom_font_family"
-			android:title="フォント"
-			app:summary="システムフォントを変更" />
+		    android:defaultValue="0"
+		    android:entries="@array/pref_custom_pointer_type"
+		    android:entryValues="@array/pref_custom_pointer_type_values"
+		    android:key="key_custom_pointer_type"
+            android:title="ポインターの種類"
+            android:summary="再起動が必要です。" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Styles">
+	<ListPreference
+		android:defaultValue=""
+            android:entries="@array/pref_custom_accent_color"
+            android:entryValues="@array/pref_custom_accent_color_values"
+            android:key="key_custom_accent_color"
+		android:title="色"
+		app:summary="表示色を変更" />
+	<ListPreference
+		android:defaultValue=""
+            android:entries="@array/pref_custom_icon_shape"
+            android:entryValues="@array/pref_custom_icon_shape_values"
+            android:key="key_custom_icon_shape"
+		android:title="アイコンの形状"
+		app:summary="アプリアイコンの表示形状を変更" />
+	<ListPreference
+		android:defaultValue=""
+            android:entries="@array/pref_custom_icon_pack"
+            android:entryValues="@array/pref_custom_icon_pack_values"
+            android:key="key_custom_icon_pack"
+		android:title="アイコンパック"
+		app:summary="通知バーのスタイルを変更" />
+	<ListPreference
+		android:defaultValue=""
+            android:entries="@array/pref_custom_font_family"
+            android:entryValues="@array/pref_custom_font_family_values"
+            android:key="key_custom_font_family"
+		android:title="フォント"
+		app:summary="システムフォントを変更" />
     </PreferenceCategory>
 </PreferenceScreen>
