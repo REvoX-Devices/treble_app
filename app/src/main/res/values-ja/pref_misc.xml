@@ -2,7 +2,7 @@
 <resources>
     <array name="pref_misc_mobile_signal">
 	    <item>Androidのデフォルト</item>
-	    <item>Huawei製デバイス/OpenKirin</item>
+	    <item>Huawei 製デバイス/OpenKirin</item>
 	    <item>RSSI</item>
 	    <item>RSRP</item>
 	    <item>RSSNR</item>
@@ -29,7 +29,7 @@
     <array name="pref_misc_max_aspect_ratio_pre_o">
 	    <item>"1.86 (デフォルト)"</item>
 	    <item>"2.0"</item>
-	    <item>"無限"</item>
+	    <item>"無制限"</item>
     </array>
     <array name="pref_misc_max_aspect_ratio_pre_o_values">
 	    <item>"1.86"</item>

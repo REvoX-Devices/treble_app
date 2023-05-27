@@ -2,9 +2,9 @@
 <resources>
     <array name="pref_nubia_fan">
 	    <item>オフ</item>
-	    <item>低</item>
-	    <item>中</item>
-	    <item>高</item>
+	    <item>低速</item>
+	    <item>中速</item>
+	    <item>高速</item>
     </array>
     <array name="pref_nubia_fan_values">
 	    <item>"0"</item>
@@ -12,36 +12,35 @@
 	    <item>"4"</item>
 	    <item>"5"</item>
     </array>
-
     <array name="pref_nubia_redmagic_led">
-	    <item>オフ</item>
-	    <item>スクロール中のエフェクト 0</item>
-	    <item>スクロール中のエフェクト 1</item>
-	    <item>スクロール中のエフェクト 2</item>
-	    <item>スクロール中のエフェクト 3</item>
-	    <item>スクロール中のエフェクト 4</item>
-	    <item>スクロール中のエフェクト 5</item>
-	    <item>スクロール中のエフェクト 6</item>
-	    <item>スクロール中のエフェクト 7</item>
-	    <item>スクロール中のエフェクト 8</item>
-	    <item>遅い点滅のエフェクト 0</item>
-	    <item>遅い点滅のエフェクト 1</item>
-	    <item>遅い点滅のエフェクト 2</item>
-	    <item>遅い点滅のエフェクト 3</item>
-	    <item>遅い点滅のエフェクト 4</item>
-	    <item>遅い点滅のエフェクト 5</item>
-	    <item>遅い点滅のエフェクト 6</item>
-	    <item>遅い点滅のエフェクト 7</item>
-	    <item>遅い点滅のエフェクト 8</item>
-	    <item>速い点滅のエフェクト 0</item>
-	    <item>速い点滅のエフェクト 1</item>
-	    <item>速い点滅のエフェクト 2</item>
-	    <item>速い点滅のエフェクト 3</item>
-	    <item>速い点滅のエフェクト 4</item>
-	    <item>速い点滅のエフェクト 5</item>
-	    <item>速い点滅のエフェクト 6</item>
-	    <item>速い点滅のエフェクト 7</item>
-	    <item>速い点滅のエフェクト 8</item>
+    <item>OFF</item>
+    <item>スクロールエフェクト 0</item>
+    <item>スクロールエフェクト 1</item>
+    <item>スクロールエフェクト 2</item>
+    <item>スクロールエフェクト 3</item>
+    <item>スクロールエフェクト 4</item>
+    <item>スクロールエフェクト 5</item>
+    <item>スクロールエフェクト 6</item>
+    <item>スクロールエフェクト 7</item>
+    <item>スクロールエフェクト 8</item>
+    <item>低速点滅エフェクト 0</item>
+    <item>低速点滅エフェクト1</item>
+    <item>低速点滅エフェクト 2</item>
+    <item>低速点滅エフェクト 3</item>
+    <item>低速点滅エフェクト 4</item>
+    <item>低速点滅エフェクト 5</item>
+    <item>低速点滅エフェクト 6</item>
+    <item>低速点滅エフェクト 7</item>
+    <item>低速点滅エフェクト 8</item>
+    <item>高速点滅エフェクト 0</item>
+    <item>高速点滅エフェクト 1</item>
+    <item>高速点滅エフェクト 2</item>
+    <item>高速点滅エフェクト 3</item>
+    <item>高速点滅エフェクト 4</item>
+    <item>高速点滅エフェクト 5</item>
+    <item>高速点滅エフェクト 6</item>
+    <item>高速点滅エフェクト 7</item>
+    <item>高速点滅エフェクト 8</item>
     </array>
     <array name="pref_nubia_redmagic_led_values">
 	    <item>"0"</item>
