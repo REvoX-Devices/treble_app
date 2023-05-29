@@ -4,11 +4,7 @@
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_doze_handwave"
-<<<<<<< HEAD
             android:title="ハンドウェーブジェスチャーを有効" />
-=======
-            android:title="Enable Handwave gesture" />
->>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_doze_pocket"

@@ -3,7 +3,6 @@
     <SwitchPreference
         android:defaultValue="false"
         android:key="key_qualcomm_alternate_mediaprofile"
-<<<<<<< HEAD
         android:title="代替のカメラプロファイルを使用する"
         android:summary="再起動が必要です。" />
     <SwitchPreference
@@ -15,19 +14,6 @@
         android:key="key_qualcomm_disable_soundvolume_effect"
         android:title="サウンドボリュームエフェクトを無効にする"
         android:summary="音の乱れを改善する事ができます。" />
-=======
-        android:title="Use alternate camera profile"
-        android:summary="Requires a reboot" />
-    <SwitchPreference
-        android:defaultValue="false"
-        android:key="key_qualcomm_alternate_audiopolicy"
-        android:title="Use alternate audio policy" />
-    <SwitchPreference
-        android:defaultValue="false"
-        android:key="key_qualcomm_disable_soundvolume_effect"
-        android:title="Disable soundvolume effect"
-        android:summary="May fix audio distorsion" />
->>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
     <SwitchPreference
         android:defaultValue="false"
         android:key="key_qualcomm_disable_stereo_voip"

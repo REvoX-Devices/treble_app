@@ -11,11 +11,7 @@
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_huawei_touchscreen_glove_mode"
-<<<<<<< HEAD
             android:title="手袋モードを有効" />
-=======
-            android:title="Enable touchscreen glove mode" />
->>>>>>> 05d9538 (Merge pull request #3 from ChonDoit/master)
         <SwitchPreference
             android:defaultValue="false"
             android:key="key_huawei_no_hwcomposer"
